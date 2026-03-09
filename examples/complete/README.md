@@ -1,4 +1,4 @@
-# EDAS Complete Example
+# Complete
 
 This example demonstrates how to use the EDAS Terraform module to create a complete EDAS environment with ECS cluster, application, and deployment.
 
@@ -24,38 +24,15 @@ This example creates:
 
 ## Usage
 
-To run this example:
+To run this example you need to execute:
 
-1. Clone this repository and navigate to this example directory:
-   ```bash
-   cd examples/complete
-   ```
+```bash
+$ terraform init
+$ terraform plan
+$ terraform apply
+```
 
-2. Initialize Terraform:
-   ```bash
-   terraform init
-   ```
-
-3. Review and modify the variables in `terraform.tfvars` if needed:
-   ```bash
-   cp terraform.tfvars.example terraform.tfvars
-   # Edit terraform.tfvars as needed
-   ```
-
-4. Plan the deployment:
-   ```bash
-   terraform plan
-   ```
-
-5. Apply the configuration:
-   ```bash
-   terraform apply
-   ```
-
-6. Clean up when done:
-   ```bash
-   terraform destroy
-   ```
+Note that this example may create resources which cost money. Run `terraform destroy` when you don't need these resources.
 
 ## Variables
 
